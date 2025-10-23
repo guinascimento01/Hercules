@@ -1,6 +1,6 @@
 <?php
 require_once 'C:/Turma1/xampp/htdocs/Hercules/DB/Database.php';
-require_once 'C:/Turma1/xampp/htdocs/Hercules/Controller/AlunoController.php';
+require_once 'C:/Turma1/xampp/htdocs/Hercules/MVC/Controller/AlunoController.php';
 $AlunoController = new AlunoController($pdo);
 
 

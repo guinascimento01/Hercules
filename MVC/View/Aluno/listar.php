@@ -8,7 +8,7 @@ if (empty($alunos)) {
 
     echo "<table>";
     echo"<tr><td>Usuários</td>
-    <td><a href='View/Aluno/cadastrar.php'>Cadastrar Novo Usuário</a>;
+    <td><a href='MVC/View/Aluno/cadastrar.php'>Cadastrar Novo Usuário</a>;
     </tr>";
     echo "<tr>
         <th>ID</th>
@@ -26,8 +26,8 @@ foreach ($alunos as $aluno) {
       echo "<td>{$aluno['email']}</td>";
 
       echo "<td>
-<a class ='edit' href='View/Aluno/editar.php?id={$id}'>Editar</a> 
-<a class = 'del' href='View/Aluno/deletar.php?id={$id}' onclick=\"return confirm('Tem certeza que deseja excluir este usuário?')\">Deletar</a></td>";
+<a class ='edit' href='MVC/View/Aluno/editar.php?id={$id}'>Editar</a> 
+<a class = 'del' href='MVC/View/Aluno/deletar.php?id={$id}' onclick=\"return confirm('Tem certeza que deseja excluir este usuário?')\">Deletar</a></td>";
       echo "</tr>";
     }
 

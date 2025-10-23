@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/Turma1/xampp/htdocs/Hercules/Model/AlunoModel.php';
+require_once 'C:/Turma1/xampp/htdocs/Hercules/MVC/Model/AlunoModel.php';
 
 class AlunoController{
     private $AlunoModel;
@@ -9,7 +9,7 @@ public function __construct ($pdo){
 }
  public function listar() {
         $alunos = $this->AlunoModel->buscarTodosAlunos();
-        include_once "C:/Turma1/xampp/htdocs/Hercules/View/Aluno/listar.php";
+        include_once "C:/Turma1/xampp/htdocs/Hercules/MVC/View/Aluno/listar.php";
         return $alunos;
     }
     public function buscarAluno($id){
